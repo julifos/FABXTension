@@ -1,0 +1,644 @@
+[
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/smile.png",
+    "alt": ":smile:",
+    "w": 26,
+    "h": 25
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/lol.png",
+    "alt": ":lol:",
+    "w": 28,
+    "h": 25
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/love.png",
+    "alt": ":love:",
+    "w": 26,
+    "h": 25
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/crazy.png",
+    "alt": ":crazy:",
+    "w": 26,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/yes.png",
+    "alt": ":yes:",
+    "w": 27,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/oh.png",
+    "alt": ":oh:",
+    "w": 26,
+    "h": 25
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/grateful.png",
+    "alt": ":grateful:",
+    "w": 26,
+    "h": 25
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/cry.png",
+    "alt": ":cry:",
+    "w": 26,
+    "h": 25
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/horreur.png",
+    "alt": ":horreur:",
+    "w": 27,
+    "h": 26
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/mad.png",
+    "alt": ":mad:",
+    "w": 26,
+    "h": 25
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/demon.png",
+    "alt": ":demon:",
+    "w": 26,
+    "h": 25
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/skull.png",
+    "alt": ":skull:",
+    "w": 22,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/hearts.png",
+    "alt": ":hearts:",
+    "w": 28,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/heart.png",
+    "alt": ":heart:",
+    "w": 28,
+    "h": 25
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/hello.png",
+    "alt": ":hello:",
+    "w": 24,
+    "h": 25
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/ok.png",
+    "alt": ":ok:",
+    "w": 16,
+    "h": 26
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/right.png",
+    "alt": ":right:",
+    "w": 26,
+    "h": 21
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/below.png",
+    "alt": ":below:",
+    "w": 21,
+    "h": 26
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/you.png",
+    "alt": ":you:",
+    "w": 26,
+    "h": 26
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/fine.png",
+    "alt": ":fine:",
+    "w": 26,
+    "h": 25
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/okay.png",
+    "alt": ":okay:",
+    "w": 23,
+    "h": 26
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/capito.png",
+    "alt": ":capito:",
+    "w": 21,
+    "h": 26
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/cuernos.png",
+    "alt": ":cuernos:",
+    "w": 25,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/yeah.png",
+    "alt": ":yeah:",
+    "w": 24,
+    "h": 25
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/fist.png",
+    "alt": ":fist:",
+    "w": 25,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/fistleft.png",
+    "alt": ":fistleft:",
+    "w": 25,
+    "h": 18
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/fistright.png",
+    "alt": ":fistright:",
+    "w": 25,
+    "h": 18
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/strong.png",
+    "alt": ":strong:",
+    "w": 22,
+    "h": 26
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/hear.png",
+    "alt": ":hear:",
+    "w": 17,
+    "h": 25
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/watch.png",
+    "alt": ":watch:",
+    "w": 28,
+    "h": 20
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/star.png",
+    "alt": ":star:",
+    "w": 28,
+    "h": 26
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/rainbow.png",
+    "alt": ":rainbow:",
+    "w": 24,
+    "h": 28
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/snowman.png",
+    "alt": ":snowman:",
+    "w": 22,
+    "h": 28
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/fire.png",
+    "alt": ":fire:",
+    "w": 22,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/present.png",
+    "alt": ":present:",
+    "w": 26,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/search.png",
+    "alt": ":search:",
+    "w": 28,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/smoke.png",
+    "alt": ":smoke:",
+    "w": 28,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/caution.png",
+    "alt": ":caution:",
+    "w": 28,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/18.png",
+    "alt": ":18:",
+    "w": 28,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/spain.png",
+    "alt": ":spain:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/shit.png",
+    "alt": ":shit:",
+    "w": 26,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/clown.png",
+    "alt": ":clown:",
+    "w": 28,
+    "h": 26
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/phantom.png",
+    "alt": ":phantom:",
+    "w": 28,
+    "h": 28
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/catoh.png",
+    "alt": ":catoh:",
+    "w": 28,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/catsmile.png",
+    "alt": ":catsmile:",
+    "w": 28,
+    "h": 25
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/blind.png",
+    "alt": ":blind:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/deaf.png",
+    "alt": ":deaf:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/dumb.png",
+    "alt": ":dumb:",
+    "w": 25,
+    "h": 23
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/dog.png",
+    "alt": ":dog:",
+    "w": 28,
+    "h": 21
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/pig.png",
+    "alt": ":pig:",
+    "w": 28,
+    "h": 24
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/horse.png",
+    "alt": ":horse:",
+    "w": 26,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/dinosaur.png",
+    "alt": ":dinosaur:",
+    "w": 28,
+    "h": 24
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/snail.png",
+    "alt": ":snail:",
+    "w": 28,
+    "h": 26
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/mushroom.png",
+    "alt": ":mushroom:",
+    "w": 26,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/cactus.png",
+    "alt": ":cactus:",
+    "w": 20,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/chicken.png",
+    "alt": ":chicken:",
+    "w": 28,
+    "h": 26
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/lemon.png",
+    "alt": ":lemon:",
+    "w": 28,
+    "h": 23
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/cherry.png",
+    "alt": ":cherry:",
+    "w": 22,
+    "h": 28
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/potato.png",
+    "alt": ":potato:",
+    "w": 28,
+    "h": 26
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/onion.png",
+    "alt": ":onion:",
+    "w": 25,
+    "h": 28
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/carrot.png",
+    "alt": ":carrot:",
+    "w": 28,
+    "h": 24
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/cheese.png",
+    "alt": ":cheese:",
+    "w": 28,
+    "h": 24
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/bread.png",
+    "alt": ":bread:",
+    "w": 28,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/world.png",
+    "alt": ":world:",
+    "w": 28,
+    "h": 28
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/cock.png",
+    "alt": ":cock:",
+    "w": 18,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/anchor.png",
+    "alt": ":anchor:",
+    "w": 26,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/help.png",
+    "alt": ":help:",
+    "w": 26,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/police.png",
+    "alt": ":police:",
+    "w": 28,
+    "h": 26
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/taxi.png",
+    "alt": ":taxi:",
+    "w": 28,
+    "h": 21
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/ambulance.png",
+    "alt": ":ambulance:",
+    "w": 28,
+    "h": 24
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/ray.png",
+    "alt": ":ray:",
+    "w": 21,
+    "h": 28
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/snow.png",
+    "alt": ":snow:",
+    "w": 24,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/sun.png",
+    "alt": ":sun:",
+    "w": 28,
+    "h": 28
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/ball.png",
+    "alt": ":ball:",
+    "w": 28,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/trophy.png",
+    "alt": ":trophy:",
+    "w": 28,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/medal1.png",
+    "alt": ":medal1:",
+    "w": 18,
+    "h": 28
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/medal2.png",
+    "alt": ":medal2:",
+    "w": 17,
+    "h": 28
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/eightball.png",
+    "alt": ":eightball:",
+    "w": 28,
+    "h": 28
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/sunglasses.png",
+    "alt": ":sunglasses:",
+    "w": 28,
+    "h": 10
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/idea.png",
+    "alt": ":idea:",
+    "w": 18,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/bell.png",
+    "alt": ":bell:",
+    "w": 28,
+    "h": 26
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/phone.png",
+    "alt": ":phone:",
+    "w": 28,
+    "h": 24
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/book.png",
+    "alt": ":book:",
+    "w": 22,
+    "h": 26
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/photo.png",
+    "alt": ":photo:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/cinema.png",
+    "alt": ":cinema:",
+    "w": 26,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/money.png",
+    "alt": ":money:",
+    "w": 24,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/euros.png",
+    "alt": ":euros:",
+    "w": 28,
+    "h": 18
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/coffin.png",
+    "alt": ":coffin:",
+    "w": 27,
+    "h": 25
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/hammer.png",
+    "alt": ":hammer:",
+    "w": 27,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/sword.png",
+    "alt": ":sword:",
+    "w": 28,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/axe.png",
+    "alt": ":axe:",
+    "w": 28,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/saw.png",
+    "alt": ":saw:",
+    "w": 26,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/wrench.png",
+    "alt": ":wrench:",
+    "w": 26,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/magnet.png",
+    "alt": ":magnet:",
+    "w": 27,
+    "h": 27
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/usa.png",
+    "alt": ":usa:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/italy.png",
+    "alt": ":italy:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/germany.png",
+    "alt": ":germany:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/british.png",
+    "alt": ":british:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/france.png",
+    "alt": ":france:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/portugal.png",
+    "alt": ":portugal:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/brazil.png",
+    "alt": ":brazil:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/netherlands.png",
+    "alt": ":netherlands:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/sweden.png",
+    "alt": ":sweden:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/finland.png",
+    "alt": ":finland:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/norway.png",
+    "alt": ":norway:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/rusia.png",
+    "alt": ":rusia:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/china.png",
+    "alt": ":china:",
+    "w": 28,
+    "h": 22
+  }
+]

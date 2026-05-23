@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_appName__",
+  "version": "1.0.0",
+  "description": "__MSG_appDesc__",
+  "default_locale": "es",
+  "short_name": "FABXTension",
+  
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "storage",
+    "scripting"
+  ],
+  
+  "host_permissions": [
+    "http://*.mforos.com/*",
+    "https://*.mforos.com/*"
+  ],
+  
+  "web_accessible_resources": [
+    {
+	  "resources": [ "res/emojis.json", "themes/*.css" ],
+      "matches": ["http://*.mforos.com/*", "https://*.mforos.com/*"]
+    }
+  ], 
+   
+  "background": {
+    "service_worker": "events.js",
+    "scripts": ["events.js"]
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["main.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ],
+  
+  "icons": {
+    "16": "16.png",
+    "32": "32.png",
+    "48": "48.png",
+    "128": "128.png"
+  }
+}

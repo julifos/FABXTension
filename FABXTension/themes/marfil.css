@@ -1,0 +1,111 @@
+:root {
+	--clarito:#FFF2E1;
+	--clarito2:#FFE8CA;
+	--clarito3:#ddd7d7;
+	--clarito4:#ece3e3;
+	--oscuro:#201C1C;
+	--backgroundDef: #505050;
+	--citabordeDef: #404040;
+	--tabla1linkDef: #AF956D;
+}
+#mmenu_wrapper {
+	background: var(--backgroundDef) !important;
+}
+html body, .tablaRow:nth-child(odd), .miaCalendar .monthweek, div.mia_bloque,div.mia_bloque div.mia_bloque {
+	background: var(--clarito) !important;
+}
+.tablaRow:nth-child(even) {
+    background: var(--clarito2) !important;
+}
+.boxTitle {
+    background-color: var(--clarito3) !important;
+}
+.tabla_categorias, .tabla_sombra_4 {
+    background-color: var(--clarito4) !important;
+}
+div.mia_bloque,div.mia_bloque div.mia_bloque {
+    border-color: var(--citabordeDef) !important;
+}
+.tablaRow a:link, .tablaRow a:visited, .tablaRow a:active {
+    text-decoration: underline !important;
+}
+.tabla_boton, BUTTON, textarea, select, file, .tabla_input {
+    background-color: transparent !important;
+    border:1px dashed var(--tabla1linkDef) !important;
+}
+
+.tablaRow,.boxTitle,.tabla_categorias, .tabla_sombra_4,.boxTitle a:link, .boxTitle a:hover, .boxTitle a:active, .boxTitle a:visited,.tabla_categorias a:link, .tabla_categorias a:visited, .tabla_sombra_4 a:link, .tabla_sombra_4 a:visited, div a.tabla_boton:link, div a.tabla_boton:visited, div a.tabla_boton:active, div a.tabla_boton:hover, div a.fileIcon:link, div a.fileIcon:visited, div a.fileIcon:active, div a.fileIcon:hover, .tablaRow a:link, .tablaRow a:visited, .tablaRow a:active, .tabla_boton, BUTTON, textarea, select, file, .tabla_input {
+    color: var(--oscuro) !important;
+}
+
+
+/* ==========================================================================
+   ESTILOS PARA EL EDITOR DE TEXTO (TINYMCE IFRAME)
+   ========================================================================== */
+
+/* Apuntamos al cuerpo del editor usando su ID y forzando con html */
+html body#tinymce {
+    background-color: var(--clarito) !important;
+    background-image: none !important;
+    color: var(--oscuro) !important;
+}
+
+/* Nos aseguramos de que los párrafos que escriba el usuario sigan tu paleta */
+body#tinymce p, body#tinymce span {
+    color: var(--oscuro) !important;
+}
+/* Botón de la extensión en la barra de TinyMCE */
+.fab-mce-button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+}
+.fab-mce-button:hover {
+    border: 1px solid #777b80 !important;
+    background-color: #c1d2ee !important;
+}
+
+/* Contenedor flotante de emoticonos */
+.fab-emoji-popup {
+    position: absolute;
+    width: 280px;
+    max-height: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    z-index: 200000;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+    padding: 8px;
+    overflow-y: auto;
+    border-radius: 4px;
+}
+
+/* Cada casilla de emoticono dentro del panel */
+.fab-emoji-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: transform 0.1s;
+}
+.fab-emoji-item:hover {
+    border: 1px solid #3b6ea5;
+    background-color: #eaf2fb;
+    transform: scale(1.1);
+}
+.fab-emoji-item img {
+    max-width: 32px;
+    max-height: 32px;
+    object-fit: contain;
+}
