@@ -168,6 +168,162 @@
     "h": 26
   },
   {
+    "url": "barbera.png",
+    "alt": ":barbera:",
+    "w": 38,
+    "h": 22
+  },
+  {
+    "url": "bowie.png",
+    "alt": ":bowie:",
+    "w": 68,
+    "h": 22
+  },
+  {
+    "url": "caza.png",
+    "alt": ":caza:",
+    "w": 22,
+    "h": 22
+  },
+  {
+    "url": "chips.png",
+    "alt": ":chips:",
+    "w": 114,
+    "h": 22
+  },
+  {
+    "url": "cut.png",
+    "alt": ":cut:",
+    "w": 17,
+    "h": 22
+  },
+  {
+    "url": "daggers.png",
+    "alt": ":daggers:",
+    "w": 22,
+    "h": 22
+  },
+  {
+    "url": "dracula.png",
+    "alt": ":dracula:",
+    "w": 21,
+    "h": 22
+  },
+  {
+    "url": "forja.png",
+    "alt": ":forja:",
+    "w": 20,
+    "h": 22
+  },
+  {
+    "url": "gitana.png",
+    "alt": ":gitana:",
+    "w": 21,
+    "h": 22
+  },
+  {
+    "url": "indiana.png",
+    "alt": ":indiana:",
+    "w": 20,
+    "h": 22
+  },
+  {
+    "url": "indio.png",
+    "alt": ":indio:",
+    "w": 19,
+    "h": 22
+  },
+  {
+    "url": "leprechaun.png",
+    "alt": ":leprechaun:",
+    "w": 18,
+    "h": 22
+  },
+  {
+    "url": "menipo.png",
+    "alt": ":menipo:",
+    "w": 22,
+    "h": 22
+  },
+  {
+    "url": "momia.png",
+    "alt": ":momia:",
+    "w": 21,
+    "h": 22
+  },
+  {
+    "url": "monja.png",
+    "alt": ":monja:",
+    "w": 18,
+    "h": 22
+  },
+  {
+    "url": "ninja.png",
+    "alt": ":ninja:",
+    "w": 25,
+    "h": 22
+  },
+  {
+    "url": "papa.png",
+    "alt": ":papa:",
+    "w": 20,
+    "h": 22
+  },
+  {
+    "url": "pirata.png",
+    "alt": ":pirata:",
+    "w": 17,
+    "h": 22
+  },
+  {
+    "url": "rambo.png",
+    "alt": ":rambo:",
+    "w": 20,
+    "h": 22
+  },
+  {
+    "url": "razor.png",
+    "alt": ":razor:",
+    "w": 22,
+    "h": 22
+  },
+  {
+    "url": "revolver.png",
+    "alt": ":revolver:",
+    "w": 29,
+    "h": 22
+  },
+  {
+    "url": "sushi.png",
+    "alt": ":sushi:",
+    "w": 19,
+    "h": 22
+  },
+  {
+    "url": "templario.png",
+    "alt": ":templario:",
+    "w": 19,
+    "h": 22
+  },
+  {
+    "url": "temple.png",
+    "alt": ":temple:",
+    "w": 22,
+    "h": 22
+  },
+  {
+    "url": "tijeras.png",
+    "alt": ":tijeras:",
+    "w": 34,
+    "h": 22
+  },
+  {
+    "url": "verdugo.png",
+    "alt": ":verdugo:",
+    "w": 26,
+    "h": 22
+  },
+  {
     "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/hear.png",
     "alt": ":hear:",
     "w": 17,
@@ -232,12 +388,6 @@
     "alt": ":18:",
     "w": 28,
     "h": 27
-  },
-  {
-    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/spain.png",
-    "alt": ":spain:",
-    "w": 28,
-    "h": 22
   },
   {
     "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/shit.png",
@@ -564,8 +714,8 @@
     "h": 27
   },
   {
-    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/usa.png",
-    "alt": ":usa:",
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/spain.png",
+    "alt": ":spain:",
     "w": 28,
     "h": 22
   },
@@ -596,6 +746,12 @@
   {
     "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/portugal.png",
     "alt": ":portugal:",
+    "w": 28,
+    "h": 22
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/julifos/FABXTension/emojis/usa.png",
+    "alt": ":usa:",
     "w": 28,
     "h": 22
   },

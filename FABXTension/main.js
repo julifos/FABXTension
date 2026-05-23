@@ -125,6 +125,12 @@ const FABXTension = {
                     document.body.appendChild(popup);
 
                     // Evento para abrir/cerrar el panel
+                    const centrarPopup = () => {
+                        const popupWidth = 350;
+                        const centeredLeft = window.scrollX + ((window.innerWidth - popupWidth) / 2);
+                        popup.style.left = `${Math.round(centeredLeft)}px`;
+                    };
+
                     boton.addEventListener('click', (e) => {
                         e.stopPropagation();
                         const estaAbierto = popup.style.display === 'grid';
@@ -133,12 +139,16 @@ const FABXTension = {
                         document.querySelectorAll('.fab-emoji-popup').forEach(p => p.style.display = 'none');
                         
                         if (!estaAbierto) {
-                            // Calculamos la posición del botón en la pantalla para flotar justo debajo
+                            // Mantenemos la Y respecto al botón, pero centramos horizontalmente en viewport.
                             const rect = boton.getBoundingClientRect();
                             popup.style.top = `${rect.bottom + window.scrollY + 4}px`;
-                            popup.style.left = `${rect.left + window.scrollX}px`;
+                            centrarPopup();
                             popup.style.display = 'grid';
                         }
+                    });
+
+                    window.addEventListener('resize', () => {
+                        if (popup.style.display === 'grid') centrarPopup();
                     });
                 })
                 .catch(err => console.error("[FAB Error] No se pudo leer res/emojis.json:", err));

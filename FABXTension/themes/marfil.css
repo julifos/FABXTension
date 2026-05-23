@@ -77,14 +77,14 @@ body#tinymce p, body#tinymce span {
 /* Contenedor flotante de emoticonos */
 .fab-emoji-popup {
     position: absolute;
-    width: 280px;
-    max-height: 200px;
+    width: 350px;
+    max-height: 350px;
     background-color: #f0f0f0;
     border: 1px solid #999;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
     z-index: 200000;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 6px;
     padding: 8px;
     overflow-y: auto;
