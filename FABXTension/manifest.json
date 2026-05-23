@@ -20,7 +20,7 @@
   
   "web_accessible_resources": [
     {
-	  "resources": [ "res/emojis.json", "themes/*.css" ],
+	  "resources": [ "res/emojis.json", "themes/*.css", "themes/*.js" ],
       "matches": ["http://*.mforos.com/*", "https://*.mforos.com/*"]
     }
   ], 

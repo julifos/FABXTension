@@ -60,6 +60,17 @@ chrome.runtime.onInstalled.addListener(function() {
             contexts: ["all"],
             documentUrlPatterns: FORO_URL_PATTERNS
         });
+
+        // Opción: first blood
+        chrome.contextMenus.create({
+            id: "tema-first-blood",
+            parentId: "fab-sub-tema",
+            title: "first blood",
+            type: "radio",
+            checked: data.temaActivo === "first-blood",
+            contexts: ["all"],
+            documentUrlPatterns: FORO_URL_PATTERNS
+        });
         
         // Aquí podrás añadir más temas en el futuro de forma modular:
         // Por ejemplo: id: "tema-oscuro", title: "Oscuro", etc.
@@ -73,6 +84,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
     let nuevoTema = "defecto";
     if (info.menuItemId === "tema-marfil") nuevoTema = "marfil";
     if (info.menuItemId === "tema-camuflaje") nuevoTema = "camuflaje";
+    if (info.menuItemId === "tema-first-blood") nuevoTema = "first-blood";
     // if (info.menuItemId === "tema-oscuro") nuevoTema = "oscuro";
 
     // Guardar la configuración de forma persistente
@@ -92,9 +104,14 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
             if (data.temaActivo === "defecto") return;
 
             let cssFile = "";
+            let jsFile = "";
             // IMPORTANTE: Aseguramos la barra diagonal '/' al inicio para que la ruta sea absoluta dentro del paquete
             if (data.temaActivo === "marfil") cssFile = "/themes/marfil.css";
             if (data.temaActivo === "camuflaje") cssFile = "/themes/camuflaje.css";
+            if (data.temaActivo === "first-blood") {
+                cssFile = "/themes/first-blood.css";
+                jsFile = "/themes/first-blood.js";
+            }
 
             if (cssFile) {
                 chrome.scripting.insertCSS({
@@ -105,6 +122,17 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
                 }).catch(err => {
                     // Este error ahora saltará directo en la consola del Service Worker
                     console.error("[FAB] Error crítico inyectando CSS:", err);
+                });
+            }
+
+            if (jsFile) {
+                chrome.scripting.executeScript({
+                    target: { tabId: tabId, allFrames: true },
+                    files: [jsFile]
+                }).then(() => {
+                    console.log(`[FAB] JS ${jsFile} inyectado con éxito en pestaña ${tabId}`);
+                }).catch(err => {
+                    console.error("[FAB] Error crítico inyectando JS:", err);
                 });
             }
         });
