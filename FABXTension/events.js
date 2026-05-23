@@ -1,6 +1,10 @@
 "use strict";
 
 const FORO_DOMAIN = "armasblancas.mforos.com";
+const FORO_URL_PATTERNS = [
+    "http://armasblancas.mforos.com/*",
+    "https://armasblancas.mforos.com/*"
+];
 
 // 1. Crear el árbol de menús al instalar/actualizar la extensión
 chrome.runtime.onInstalled.addListener(function() {
@@ -11,7 +15,8 @@ chrome.runtime.onInstalled.addListener(function() {
         chrome.contextMenus.create({
             id: "fab-raiz",
             title: "FAB",
-            contexts: ["all"]
+            contexts: ["all"],
+            documentUrlPatterns: FORO_URL_PATTERNS
         });
 
         // Submenú: Tema
@@ -19,7 +24,8 @@ chrome.runtime.onInstalled.addListener(function() {
             id: "fab-sub-tema",
             parentId: "fab-raiz",
             title: "Tema",
-            contexts: ["all"]
+            contexts: ["all"],
+            documentUrlPatterns: FORO_URL_PATTERNS
         });
 
         // Opción: Por defecto
@@ -29,7 +35,8 @@ chrome.runtime.onInstalled.addListener(function() {
             title: "Por defecto",
             type: "radio",
             checked: data.temaActivo === "defecto",
-            contexts: ["all"]
+            contexts: ["all"],
+            documentUrlPatterns: FORO_URL_PATTERNS
         });
 
         // Opción: marfil
@@ -39,7 +46,8 @@ chrome.runtime.onInstalled.addListener(function() {
             title: "marfil",
             type: "radio",
             checked: data.temaActivo === "marfil",
-            contexts: ["all"]
+            contexts: ["all"],
+            documentUrlPatterns: FORO_URL_PATTERNS
         });
         
         // Aquí podrás añadir más temas en el futuro de forma modular:
