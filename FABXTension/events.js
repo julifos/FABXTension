@@ -49,6 +49,17 @@ chrome.runtime.onInstalled.addListener(function() {
             contexts: ["all"],
             documentUrlPatterns: FORO_URL_PATTERNS
         });
+
+        // Opción: camuflaje
+        chrome.contextMenus.create({
+            id: "tema-camuflaje",
+            parentId: "fab-sub-tema",
+            title: "camuflaje",
+            type: "radio",
+            checked: data.temaActivo === "camuflaje",
+            contexts: ["all"],
+            documentUrlPatterns: FORO_URL_PATTERNS
+        });
         
         // Aquí podrás añadir más temas en el futuro de forma modular:
         // Por ejemplo: id: "tema-oscuro", title: "Oscuro", etc.
@@ -61,6 +72,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 
     let nuevoTema = "defecto";
     if (info.menuItemId === "tema-marfil") nuevoTema = "marfil";
+    if (info.menuItemId === "tema-camuflaje") nuevoTema = "camuflaje";
     // if (info.menuItemId === "tema-oscuro") nuevoTema = "oscuro";
 
     // Guardar la configuración de forma persistente
@@ -82,6 +94,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
             let cssFile = "";
             // IMPORTANTE: Aseguramos la barra diagonal '/' al inicio para que la ruta sea absoluta dentro del paquete
             if (data.temaActivo === "marfil") cssFile = "/themes/marfil.css";
+            if (data.temaActivo === "camuflaje") cssFile = "/themes/camuflaje.css";
 
             if (cssFile) {
                 chrome.scripting.insertCSS({
