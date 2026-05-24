@@ -8,10 +8,10 @@ Actualmente el código del repositorio está orientado a navegadores Chromium. F
 
 - Kit de emojis personalizados integrado en el editor de mensajes.
 - Subida directa de imágenes desde el editor con dos proveedores (`ImgBB` y `Postimages`) mediante arrastrar, pegar o clic.
-- Sistema de temas para cambiar el aspecto visual del foro.
+- Sistema de temas para cambiar el aspecto visual del foro (menú FABXtension).
+- Zoom interactivo sobre imágenes en mensajes.
+- Búsqueda contextual del texto seleccionado en el foro (búsqueda interna FAB y búsqueda en Google restringida al FAB).
 - Persistencia local de la preferencia de tema.
-- Búsqueda contextual por texto seleccionado en el foro (búsqueda interna FAB y búsqueda en Google restringida al FAB).
-- Zoom interactivo sobre imágenes no enlazadas dentro del foro.
 - Arquitectura simple en JavaScript sin proceso de build.
 
 ## Alcance del proyecto
@@ -76,6 +76,36 @@ Esta función está orientada a escritorio para no interferir con el menú conte
 ### Zoom de imágenes
 
 Las imágenes del foro que no estén envueltas en un enlace pueden ampliarse con clic izquierdo. El sistema calcula la escala real de la imagen, aplica el zoom desde el punto pulsado y permite volver al estado normal con otro clic.
+
+## Capturas
+
+### Menú FAB y búsqueda
+
+![Búsqueda contextual en FAB](README-images/buscar.jpg)
+
+### Editor TinyMCE
+
+![Editor con herramientas FABXTension](README-images/editor.jpg)
+
+### Panel de emojis
+
+![Panel de emojis](README-images/emojis.jpg)
+
+### Subida de imágenes con ImgBB
+
+![Subida de imágenes con ImgBB](README-images/imgbb.jpg)
+
+### Temas en desktop
+
+![Temas en desktop](README-images/temas-desktop.jpg)
+
+### Temas en móvil
+
+![Temas en móvil](README-images/temas-mobile.jpg)
+
+### Zoom sobre imágenes
+
+![Zoom sobre imágenes en mensajes](README-images/zoom.jpg)
 
 ## Estructura del repositorio
 
@@ -146,11 +176,11 @@ El proyecto está planteado para ser fácil de tocar sin cadena de build ni depe
 - Priorizar cambios pequeños, reversibles y fáciles de validar sobre el propio foro.
 - No romper la inserción de emojis ya existentes ni las URLs públicas de recursos publicados.
 
-## Instrucciones para agentes de IA en VS Code
+## Guía de trabajo (universal)
 
-Si un agente de IA va a trabajar sobre este repositorio desde Visual Studio Code, estas son las reglas prácticas recomendadas:
+Estas pautas aplican a cualquier persona o agente que colabore en el proyecto, independientemente del editor, IDE o entorno de ejecución.
 
-### Objetivo del agente
+### Objetivo
 
 - Mejorar o mantener FABXTension sin ampliar alcance de forma accidental.
 - Tratar este repositorio como una extensión centrada en el FAB, no como un framework genérico.
@@ -158,34 +188,34 @@ Si un agente de IA va a trabajar sobre este repositorio desde Visual Studio Code
 
 ### Dónde mirar primero
 
-- `FABXTension/manifest.json` para cualquier duda sobre permisos, recursos o alcance.
-- `FABXTension/main.js` para el comportamiento en página.
+- `FABXTension/manifest.json` para permisos, recursos y alcance.
+- `FABXTension/main.js` para comportamiento en página.
 - `FABXTension/events.js` para menú contextual, estado persistente e inyección de estilos.
-- `FABXTension/res/emojis.json` para cualquier cambio en emojis.
+- `FABXTension/res/emojis.json` para cambios de emojis.
 - `README.md` para no contradecir la narrativa pública del proyecto.
 
-### Límites que no debería romper
+### Límites importantes
 
 - No prometer compatibilidad completa con Firefox si no se implementa y valida.
 - No cambiar rutas públicas de emojis sin considerar mensajes ya publicados.
 - No ampliar permisos del manifiesto sin una razón clara y documentada.
-- No introducir build steps o frameworks sin que exista una necesidad real.
+- No introducir pasos de build o frameworks sin necesidad real.
 
-### Flujo de trabajo recomendado
+### Flujo recomendado
 
 1. Identificar el archivo que controla directamente el comportamiento a cambiar.
 2. Leer solo el contexto mínimo necesario para formular una hipótesis concreta.
 3. Hacer cambios pequeños y locales.
 4. Validar inmediatamente después con la comprobación más cercana posible.
-5. Actualizar documentación si cambia el comportamiento visible para usuarios o contribuidores.
+5. Actualizar documentación si cambia comportamiento visible para usuarios o colaboradores.
 
 ### Validaciones mínimas
 
 - Confirmar que la extensión sigue cargando desde `FABXTension/` como carpeta desempaquetada.
 - Revisar `manifest.json` si se tocan permisos, recursos o scripts.
 - Comprobar que el editor de mensajes sigue insertando emojis.
-- Comprobar que el cambio de tema sigue funcionando desde el menú contextual.
-- Comprobar que el zoom de imágenes no interfiere con el panel de emojis ni con imágenes enlazadas.
+- Comprobar que el cambio de tema sigue funcionando desde el menú integrado en el foro.
+- Comprobar que el zoom de imágenes no interfiere con paneles de UI ni con imágenes enlazadas.
 
 ### Estilo esperado
 
@@ -193,6 +223,12 @@ Si un agente de IA va a trabajar sobre este repositorio desde Visual Studio Code
 - Preferencia por soluciones directas sobre abstracciones innecesarias.
 - Comentarios solo cuando aclaren una decisión no obvia.
 - README y mensajes públicos en español natural, salvo textos internacionales que deban mantenerse también en inglés.
+
+## Licencia y forks
+
+FABXTension se distribuye bajo licencia MIT. Se aceptan modificaciones, adaptaciones y contribuciones.
+
+También se permiten forks del proyecto. Si se publica una variante propia, debe renombrarse para dejar clara su desvinculación del proyecto original FABXTension.
 
 ## Roadmap orientativo
 
@@ -210,6 +246,7 @@ Si un agente de IA va a trabajar sobre este repositorio desde Visual Studio Code
 - Tras completar la subida, cada imagen se inserta automáticamente en el editor como `<p><img src="..." /></p>`.
 - Se amplían permisos del manifiesto para integración con servicios de subida externos.
 - Se mueve la subida de imágenes al proceso de fondo para evitar bloqueos CORS en páginas del foro.
+- Se documenta la licencia MIT y la política de forks con renombrado obligatorio de variantes publicadas.
 
 ### v1.1.1 - 2026-05-24
 

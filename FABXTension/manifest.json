@@ -30,6 +30,7 @@
   ], 
    
   "background": {
+    "service_worker": "events.js",
     "scripts": ["events.js"]
   },
   

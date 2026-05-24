@@ -42,30 +42,48 @@ const encodeLatin1Query = (text) => {
 
 // 1. Crear el árbol de menús al instalar/actualizar la extensión
 if (chrome.contextMenus && chrome.contextMenus.create) {
+    const crearMenusContextuales = () => {
+        chrome.contextMenus.removeAll(() => {
+            chrome.contextMenus.create({
+                id: MENU_ROOT_ID,
+                title: t("contextRootTitle", "FAB"),
+                contexts: ["selection"],
+                documentUrlPatterns: FORO_URL_PATTERNS
+            });
+
+            chrome.contextMenus.create({
+                id: MENU_SEARCH_FAB_ID,
+                parentId: MENU_ROOT_ID,
+                title: t("contextSearchFab", "Buscar en el FAB"),
+                contexts: ["selection"],
+                documentUrlPatterns: FORO_URL_PATTERNS
+            });
+
+            chrome.contextMenus.create({
+                id: MENU_SEARCH_GOOGLE_ID,
+                parentId: MENU_ROOT_ID,
+                title: t("contextSearchFabGoogle", "Buscar en el FAB con Google"),
+                contexts: ["selection"],
+                documentUrlPatterns: FORO_URL_PATTERNS
+            });
+        });
+    };
+
     chrome.runtime.onInstalled.addListener(function() {
-        chrome.contextMenus.create({
-            id: MENU_ROOT_ID,
-            title: t("contextRootTitle", "FAB"),
-            contexts: ["selection"],
-            documentUrlPatterns: FORO_URL_PATTERNS
-        });
-
-        chrome.contextMenus.create({
-            id: MENU_SEARCH_FAB_ID,
-            parentId: MENU_ROOT_ID,
-            title: t("contextSearchFab", "Buscar en el FAB"),
-            contexts: ["selection"],
-            documentUrlPatterns: FORO_URL_PATTERNS
-        });
-
-        chrome.contextMenus.create({
-            id: MENU_SEARCH_GOOGLE_ID,
-            parentId: MENU_ROOT_ID,
-            title: t("contextSearchFabGoogle", "Buscar en el FAB con Google"),
-            contexts: ["selection"],
-            documentUrlPatterns: FORO_URL_PATTERNS
-        });
+        crearMenusContextuales();
     });
+
+    if (chrome.runtime.onStartup) {
+        chrome.runtime.onStartup.addListener(function() {
+            crearMenusContextuales();
+        });
+    }
+
+    // Fallback para recargas en modo desarrollo donde onInstalled/onStartup pueden no disparar.
+    setTimeout(() => {
+        crearMenusContextuales();
+    }, 200);
+
 }
 
 // 2. Gestionar la selección del usuario en el menú
