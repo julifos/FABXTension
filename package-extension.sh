@@ -102,6 +102,9 @@ if (target === "chrome") {
 
 if (target === "firefox") {
   manifest.background = manifest.background || {};
+  if (Object.prototype.hasOwnProperty.call(manifest.background, "service_worker")) {
+    delete manifest.background.service_worker;
+  }
   if (!Array.isArray(manifest.background.scripts)) {
     const fallbackScript = serviceWorker || "events.js";
     manifest.background.scripts = [fallbackScript];
@@ -109,10 +112,10 @@ if (target === "firefox") {
 
   manifest.browser_specific_settings = manifest.browser_specific_settings || {};
   manifest.browser_specific_settings.gecko = manifest.browser_specific_settings.gecko || {};
-  manifest.browser_specific_settings.gecko.strict_min_version = manifest.browser_specific_settings.gecko.strict_min_version || "102.0";
+  manifest.browser_specific_settings.gecko.strict_min_version = manifest.browser_specific_settings.gecko.strict_min_version || "140.0";
 
   manifest.browser_specific_settings.gecko_android = manifest.browser_specific_settings.gecko_android || {};
-  manifest.browser_specific_settings.gecko_android.strict_min_version = manifest.browser_specific_settings.gecko_android.strict_min_version || "102.0";
+  manifest.browser_specific_settings.gecko_android.strict_min_version = manifest.browser_specific_settings.gecko_android.strict_min_version || "142.0";
 
   manifest.browser_specific_settings.gecko.id = firefoxId;
 

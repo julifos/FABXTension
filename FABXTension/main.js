@@ -19,6 +19,9 @@ const FABXTension = {
         
         this.log("Inicializando módulos activos...");
 
+        // Boton de compartir en la cabecera de temas (antes de "Responder").
+        this.initShareButton();
+
         // Fallback cross-browser: aplica el CSS del tema desde content script si el background no inyecta.
         this.applyStoredThemeOnPageLoad();
 
@@ -30,6 +33,160 @@ const FABXTension = {
         
         // 2. Inicializar detector de imágenes sin enlace
         this.initImageInteractivity();
+    },
+
+	initShareButton: function() {
+        const mount = () => this.mountShareButton();
+        mount();
+
+        if (!document.body.dataset.fabxShareRetryHook) {
+            document.body.dataset.fabxShareRetryHook = '1';
+            let retries = 0;
+            const intervalId = setInterval(() => {
+                retries += 1;
+                mount();
+                if (retries >= 50) clearInterval(intervalId);
+            }, 200);
+        }
+    },
+
+	mountShareButton: function() {
+        if (document.getElementById('fab-share-button')) return true;
+
+        const toTop = document.getElementById('to-the-top');
+        if (!toTop) return false;
+
+        const linksContainer = toTop.querySelector('.alignRight .linksContainerOne');
+        if (!linksContainer) return false;
+
+        const responderBtn = linksContainer.querySelector('a.tabla_boton.largeButton');
+        if (!responderBtn) return false;
+
+        const wrapper = document.createElement('div');
+        wrapper.id = 'fab-share-wrapper';
+        Object.assign(wrapper.style, {
+            position: 'relative',
+            display: 'inline-block',
+            marginRight: '6px'
+        });
+
+        const shareBtn = document.createElement('a');
+        shareBtn.id = 'fab-share-button';
+        shareBtn.href = 'javascript:;';
+        shareBtn.title = 'Compartir este hilo';
+        shareBtn.className = 'tabla_boton largeButton';
+        shareBtn.innerHTML = '<span class="fab-share-main-icon" aria-hidden="true"></span>';
+        Object.assign(shareBtn.style, {
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '6px'
+        });
+
+        const shareMainIcon = shareBtn.querySelector('.fab-share-main-icon');
+        Object.assign(shareMainIcon.style, {
+            display: 'inline-block',
+            height: '26px',
+            width: '26px',
+            maxHeight: '26px',
+            backgroundImage: `url("${chrome.runtime.getURL('res/social-icons/share-white.png')}")`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'contain'
+        });
+
+        const menu = document.createElement('div');
+        menu.id = 'fab-share-menu';
+        Object.assign(menu.style, {
+            position: 'absolute',
+            right: '0',
+            top: 'calc(100% + 6px)',
+            minWidth: '40px',
+            background: '#fff',
+            border: '1px solid #bbb',
+            borderRadius: '6px',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
+            padding: '6px',
+            zIndex: '200000',
+            display: 'none'
+        });
+
+        const pageUrl = window.location.href;
+        const pageTitle = (document.title || '').trim();
+        const encodedUrl = encodeURIComponent(pageUrl);
+        const encodedText = encodeURIComponent(pageTitle ? `${pageTitle} ${pageUrl}` : pageUrl);
+
+        const items = [
+            {
+            	title:'Facebook',
+                icon: 'facebook.png',
+                url: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`
+            },
+            {
+            	title:'X',
+                icon: 'x.png',
+                url: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodeURIComponent(pageTitle)}`
+            },
+            {
+            	title:'WhatsApp',
+                icon: 'whatsapp.png',
+                url: `https://wa.me/?text=${encodedText}`
+            }
+        ];
+
+        items.forEach((item) => {
+            const link = document.createElement('a');
+            link.href = item.url;
+            link.title = 'Compartir en ' + item.title;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            Object.assign(link.style, {
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                padding: '8px 10px',
+                borderRadius: '4px',
+                textDecoration: 'none',
+                color: '#000'
+            });
+
+            const icon = document.createElement('img');
+            icon.src = chrome.runtime.getURL(`res/social-icons/${item.icon}`);
+            icon.alt = '';
+            Object.assign(icon.style, {
+                maxHeight: '26px',
+                width: 'auto',
+                flexShrink: '0'
+            });
+
+
+            link.appendChild(icon);
+
+            link.addEventListener('mouseenter', () => {
+                link.style.backgroundColor = '#f1f1f1';
+            });
+            link.addEventListener('mouseleave', () => {
+                link.style.backgroundColor = 'transparent';
+            });
+            menu.appendChild(link);
+        });
+
+        shareBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+        });
+
+        menu.addEventListener('click', (e) => e.stopPropagation());
+
+        document.addEventListener('click', () => {
+            menu.style.display = 'none';
+        });
+
+        wrapper.appendChild(shareBtn);
+        wrapper.appendChild(menu);
+        linksContainer.insertBefore(wrapper, responderBtn);
+
+        return true;
     },
 
     /**
@@ -458,7 +615,7 @@ const FABXTension = {
             popup.style.display = 'none';
             Object.assign(popup.style, {
                 position: 'absolute',
-                width: '350px',
+                width: '370px',
                 maxWidth: '92vw',
                 maxHeight: '350px',
                 backgroundColor: '#f0f0f0',

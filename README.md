@@ -177,6 +177,14 @@ Si un agente de IA va a trabajar sobre este repositorio desde Visual Studio Code
 - Seguir ampliando el kit de emojis y sus recursos públicos.
 - Incorporar mejoras específicas para más pantallas del FAB cuando exista una necesidad clara.
 
+## Changelog
+
+### v1.1.0 - 2026-05-24
+
+- Se añade un botón `Compartir` en la cabecera de hilos, ubicado antes de `Responder`.
+- El botón despliega un menú con acciones directas para compartir la URL actual en `Facebook`, `X` y `WhatsApp`.
+- La integración incluye iconos propios de cada red y variante visual del icono principal de compartir según tema activo.
+
 ## Notas finales
 
 Este repositorio mezcla una extensión funcional con una base de trabajo para seguir evolucionando la experiencia del FAB. La prioridad es mantenerla útil, ligera y fácil de adaptar sin perder compatibilidad con el flujo real del foro.

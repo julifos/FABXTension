@@ -176,3 +176,10 @@ button.largeButton:active {
         opacity: 0;
     }
 }
+#fab-share-button .fab-share-main-icon {
+    background-image: url('../res/social-icons/share-white.png') !important;
+}
+
+#fab-share-menu a {
+    color: #000 !important;
+}

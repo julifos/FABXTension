@@ -91,3 +91,10 @@ body#tinymce p, body#tinymce span {
     max-height: 32px;
     object-fit: contain;
 }
+#fab-share-button .fab-share-main-icon {
+    background-image: url('../res/social-icons/share-black.png') !important;
+}
+
+#fab-share-menu a {
+    color: #000 !important;
+}
