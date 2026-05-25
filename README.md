@@ -11,6 +11,7 @@ Actualmente el código del repositorio está orientado a navegadores Chromium. F
 - Sistema de temas para cambiar el aspecto visual del foro (menú FABXtension).
 - Zoom interactivo sobre imágenes en mensajes.
 - Búsqueda contextual del texto seleccionado en el foro (búsqueda interna FAB y búsqueda en Google restringida al FAB).
+- Botón para compartir hilos en redes sociales.
 - Persistencia local de la preferencia de tema.
 - Arquitectura simple en JavaScript sin proceso de build.
 
@@ -223,6 +224,36 @@ Estas pautas aplican a cualquier persona o agente que colabore en el proyecto, i
 - Preferencia por soluciones directas sobre abstracciones innecesarias.
 - Comentarios solo cuando aclaren una decisión no obvia.
 - README y mensajes públicos en español natural, salvo textos internacionales que deban mantenerse también en inglés.
+
+## Política de privacidad
+
+Última actualización: 2026-05-25.
+
+FABXTension no recopila, vende ni comparte datos personales de las personas usuarias.
+
+### Qué datos no recoge FABXTension
+
+- No crea cuentas de usuario.
+- No solicita correo, nombre ni teléfono.
+- No usa analítica, tracking ni perfiles publicitarios.
+- No envía historial de navegación a servidores propios.
+
+### Qué procesa localmente
+
+- Preferencias de la extensión (por ejemplo, tema visual) guardadas en almacenamiento local del navegador.
+- Texto seleccionado en el menú contextual, solo para construir la URL de búsqueda cuando la persona usuaria lo solicita explícitamente.
+
+### Subida de imágenes (ImgBB y Postimages)
+
+La función de subida de imágenes solo se activa por acción directa de la persona usuaria (arrastrar, pegar o hacer clic para subir).
+
+- Los archivos seleccionados se envían al proveedor elegido (`ImgBB` o `Postimages`) para completar la subida.
+- FABXTension no mantiene un servidor propio de almacenamiento de imágenes.
+- El uso de estos servicios está sujeto a sus propias políticas y condiciones.
+
+### Permisos de la extensión
+
+Los permisos solicitados se usan únicamente para funciones del producto (menú contextual, almacenamiento local, inyección de estilos/scripts del foro y conexión con servicios de subida cuando se usan).
 
 ## Licencia y forks
 

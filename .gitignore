@@ -1,2 +1,7 @@
+*.DS_Store
+
 fabxtension-artwork/
 distribution/
+
+# Legacy script name kept ignored if recreated locally
+package-extension.sh
